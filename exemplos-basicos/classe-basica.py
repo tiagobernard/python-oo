@@ -4,19 +4,17 @@ class Cachorro:
         self.comida = comida
         self.sono = sono
 
-    def set_nome(self):
-        self.nome = "Aristides"
-    
-    def comer(self):
-        self.comida -= 1
-
-    def dormir(self):
-        self.sono = False
+    #Definindo o método dentro da classe Cachorro
+    def exibir_atributos(self):
+        print(f"Nome do Cachorro: {self.nome}")
+        print(f"Quantidade de comida: {self.comida}")
+        print(f"Está dormindo? {'Sim' if self.sono else 'Não'}")
 
 #Criando uma instância da classe Cachorro
 cachorro_rex = Cachorro("Rex", 5, True)
+cachorro_aristides = Cachorro("Aristides", 3, False)
 
-#Imprindo os atributos da classe Cachorro
-print(f"Nome do cachorro: {cachorro_rex.nome}")
-print(f"Quantidade de comida: {cachorro_rex.comida}")
-print(f"O cachorro está dormindo? {'Sim' if cachorro_rex.sono else 'Não'}")
+#Chamando o método exibir_atributos para imprimir os atributos
+cachorro_rex.exibir_atributos()
+print(f"----------------------")
+cachorro_aristides.exibir_atributos()
