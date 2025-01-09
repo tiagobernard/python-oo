@@ -12,3 +12,11 @@ class Cachorro:
 
     def dormir(self):
         self.sono = False
+
+#Criando uma instância da classe Cachorro
+cachorro_rex = Cachorro("Rex", 5, True)
+
+#Imprindo os atributos da classe Cachorro
+print(f"Nome do cachorro: {cachorro_rex.nome}")
+print(f"Quantidade de comida: {cachorro_rex.comida}")
+print(f"O cachorro está dormindo? {'Sim' if cachorro_rex.sono else 'Não'}")
