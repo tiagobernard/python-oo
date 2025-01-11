@@ -8,7 +8,7 @@ class IMC: #classe que encapsula dados e métodos
         if self.peso > 0 and self.altura > 0: #Testa se o peso e altura são negativos
             return self.peso / (self.altura ** 2) # Se verdadeiro retorna o cálculo do IMC
         else:
-            raise ValueError("Digite um número positivo") # lança uma exceção, se falso retorna uma mesagem de erro
+            raise ValueError("Peso e altura devem ser um número positivo") # lança uma exceção, se falso retorna uma mesagem de erro
 
     def imprimir_resultado(self): #método que mostra o IMC ou mnsagem de erro
         try: #inicia um bloco de código que pode gerar uma exceção
