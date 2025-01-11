@@ -8,11 +8,14 @@ class IMC:
         if self.peso > 0:
             return self.peso / (self.altura ** 2)
         else:
-            print("Digite um número positivo")
+            raise ValueError("Digite um número positivo")
 
     def imprimir_resultado(self):
-        resultado = self.calcular()
-        print(f"Seu IMC é {resultado:.2f}")
+        try:
+            resultado = self.calcular()
+            print(f"Seu IMC é {resultado:.2f}")
+        except ValueError as e:
+            print(e)
 
-novoImc = IMC(1.83, -136)
-novoImc.imprimir_resultado()
+novo_imc = IMC(1.83, -136)  # Isso agora levantará uma exceção
+novo_imc.imprimir_resultado()
