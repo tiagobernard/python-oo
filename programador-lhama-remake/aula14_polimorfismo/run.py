@@ -1,3 +1,4 @@
+#QUEBRA DO PRINCÍPIO DE LISKOV
 class ClasseQualquer:
     def fazer(self) -> None:
         print("Estou fazendo algo")
