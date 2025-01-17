@@ -1,3 +1,9 @@
+#Princípio da Responsabilidade Única (Single Responsibility Principle)
+#Princípio Aberto Fechado (Open-Closed Principle)
+#Princípio da Substituição de Liskov (Liskov Substitution Principle)
+#Princípio da Segregação de Interfaces (Interface Segregation Principle)
+#Princípio da Inversão de Dependência (Dependency Inversion Principle)
+
 class Artista:
     def __init__(self, tipo: str) -> None:
         self.tipo = tipo
